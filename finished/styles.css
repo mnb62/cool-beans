@@ -24,9 +24,9 @@
 	--font-regular: 'Space Grotesk Regular';
 	--font-medium: 'Space Grotesk Medium';
 	--font-bold: 'Space Grotesk Bold';
-	--color-primary: red;
-	--color-secondary: yellow;
-	--color-tertiary: blue;
+	--color-primary: #ff3f34;
+	--color-secondary: #ffd32a;
+	--color-tertiary: #3c40c6;
 }
 
 /* Base Styles */
