@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'Space Grotesk Light';
+	src: url('./assests/SpaceGrotesk-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Grotesk Regular';
+	src: url('./assests/SpaceGrotesk-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Grotesk Medium';
+	src: url('./assests/SpaceGrotesk-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Grotesk Bold';
+	src: url('./assests/SpaceGrotesk-Bold.woff2') format('woff2');
+}
+
+:root {
+	--font-light: 'Space Grotesk Light';
+	--font-regular: 'Space Grotesk Regular';
+	--font-medium: 'Space Grotesk Medium';
+	--font-bold: 'Space Grotesk Bold';
+}
+
+/* Base Styles */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	font-family: var(--font, var(--font-regular));
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+strong {
+	--font: var(--font-bold);
+}
+
+.light {
+	--font: var(--font-light);
+}
+
+.container {
+	max-width: 1600px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.hero {
+	min-height: 100vh;
+}
+
+.hero h1 {
+	font-size: clamp(2rem, 6vw, 4rem);
+}
+
+@media (min-width: 1024px) {
+	.projects {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.project-item {
+	flex: 1;
+	position: relative;
+}
+
+.project-item h2 {
+	margin: 0;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	writing-mode: vertical-lr;
+	pointer-events: none;
+	font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.project-item video {
+	display: block;
+	width: 100%;
+	height: 50vh;
+	object-fit: cover;
+}
