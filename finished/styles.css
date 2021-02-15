@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'Space Grotesk Light';
+	src: url('./assests/SpaceGrotesk-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Grotesk Regular';
+	src: url('./assests/SpaceGrotesk-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Grotesk Bold';
+	src: url('./assests/SpaceGrotesk-Bold.woff2') format('woff2');
+}
+
+/* Default Custom Properties */
+:root {
+	--font-light: 'Space Grotesk Light';
+	--font-regular: 'Space Grotesk Regular';
+	--font-medium: 'Space Grotesk Medium';
+	--font-bold: 'Space Grotesk Bold';
+	--color-primary: #ff3f34;
+	--color-secondary: #ffd32a;
+	--color-tertiary: #3c40c6;
+}
+
+/* Base Styles */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	font-family: var(--font, var(--font-regular));
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	cursor: none;
+}
+
+strong {
+	--font: var(--font-bold);
+	color: var(--color-primary);
+}
+
+a {
+	color: var(--color-tertiary);
+}
+
+.light {
+	--font: var(--font-light);
+}
+
+.container {
+	max-width: 1600px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.hero h1 {
+	font-size: clamp(2rem, 6vw, 4rem);
+}
+
+@media (min-width: 1024px) {
+	.projects {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.project-item {
+	flex: 1;
+	position: relative;
+}
+
+.project-item h2 {
+	margin: 0;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	writing-mode: vertical-lr;
+	pointer-events: none;
+	font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.project-item video {
+	display: block;
+	width: 100%;
+	height: 50vh;
+	object-fit: cover;
+	filter: brightness(0.8);
+}
+
+.project-item video:hover {
+	filter: brightness(1);
+}
+
+/* Custom Cursors */
+@media (hover: none) {
+	.cursor {
+		display: none;
+	}
+}
+
+.cursor {
+	--height: 20px;
+	--width: 20px;
+	--background: var(--color-secondary);
+
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0%;
+	transform: translate3d(-50%, -50%, 0) translate3d(var(--x), var(--y), 0);
+	transform-origin: center;
+	transition: transform 0.35s ease-out;
+	height: var(--height);
+	width: var(--width);
+	background: var(--background);
+}
+
+.cursor[data-type='default'] {
+	border-radius: 50%;
+}
+
+.cursor[data-type='blend'] {
+	border-radius: 50%;
+	background-blend-mode: difference;
+	mix-blend-mode: difference;
+	transform: translate3d(-50%, -50%, 0) translate3d(var(--x), var(--y), 0)
+		scale(10);
+}
+
+.cursor[data-type='view'] {
+	--height: 50px;
+	--width: 100px;
+	--background: url('./assests/view.png');
+
+	background-size: contain;
+	background-repeat: no-repeat;
+}

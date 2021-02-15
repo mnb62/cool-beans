@@ -8,7 +8,37 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<main></main>
+		<main class="container">
+			<section class="hero">
+				<h1 class="light">
+					Hi my name is Chris and I’m currently a 2nd year student in the NMA
+					progam. I specialize in <strong data-cursor="blend">UI / UX</strong>,
+					<strong data-cursor="blend">front-end development</strong> and
+					<strong data-cursor="blend">packaging</strong>. You can see my
+					featured project <a href="#">here</a> or scroll down to view them all.
+					If you wanna get in touch you can drop me a line at
+					<a href="#">coolchris@cool.com</a>.
+				</h1>
+			</section>
+			<section class="projects">
+				<div class="project-item" data-cursor="view">
+					<video src="./assests/red.mp4" loop muted playsinline></video>
+					<h2>Project 1</h2>
+				</div>
+				<div class="project-item" data-cursor="view">
+					<video src="./assests/blue.mp4" loop muted playsinline></video>
+					<h2>Project 2</h2>
+				</div>
+				<div class="project-item" data-cursor="view">
+					<video src="./assests/yellow.mp4" loop muted playsinline></video>
+					<h2>Project 3</h2>
+				</div>
+			</section>
+		</main>
+
+		<div class="cursor" data-type="default"></div>
+		<div class="static-noise"></div>
+
 		<script src="./scripts.js"></script>
 	</body>
 </html>
