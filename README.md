@@ -4,9 +4,12 @@
 
 All base files will be in the `start` folder, the completed files will be found in the `finished` folder
 
-# Credits
+## Credits
 
-Fonts -Space Grotesk
+Fonts
+
+- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk?preview.text_type=custom#standard-styles)
+
 Videos
 
 - Video by Olya Kobruseva from Pexels
