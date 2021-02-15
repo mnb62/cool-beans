@@ -1,0 +1,13 @@
+-------------------------
+Fonts 
+-------------------------
+Light - Space Grotesk Light
+Regulary - Space Grotesk Regular
+Bold - Space Grotesk Bold
+
+-------------------------
+Colors
+-------------------------
+Primary - #ff3f34
+Secondary - #ffd32a
+Tertiary - #3c40c6

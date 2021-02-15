@@ -51,10 +51,6 @@ a {
 	color: var(--color-tertiary);
 }
 
-.light {
-	--font: var(--font-light);
-}
-
 .container {
 	max-width: 1600px;
 	width: 90%;
@@ -64,6 +60,7 @@ a {
 
 .hero h1 {
 	font-size: clamp(2rem, 6vw, 4rem);
+	--font: var(--font-light);
 }
 
 @media (min-width: 1024px) {
