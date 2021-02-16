@@ -2,6 +2,10 @@
 
 [View Demo](https://frzrbox.github.io/coolStuffWithCustomProperties/finished/)
 
+## Get Started
+
+`npx degit https://github.com/frzrbox/coolStuffWithCustomProperties#main <project-name>`
+
 All base files will be in the `start` folder, the completed files will be found in the `finished` folder
 
 ## Credits
