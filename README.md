@@ -12,7 +12,7 @@ All base files will be in the `start` folder, the completed files will be found 
 
 Fonts
 
-- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk?preview.text_type=custom#standard-styles)
+- [Space Grotesk](https://github.com/floriankarsten/space-grotesk)
 
 Videos
 
