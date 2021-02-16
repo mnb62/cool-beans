@@ -109,11 +109,13 @@ a {
 	--width: 20px;
 	--background: var(--color-secondary);
 
+	will-change: transform;
 	pointer-events: none;
 	position: fixed;
 	top: 0;
 	left: 0%;
-	transform: translate3d(-50%, -50%, 0) translate3d(var(--x), var(--y), 0);
+	transform: translate3d(-50%, -50%, 0)
+		translate3d(calc(var(--x)), calc(var(--y)), 0);
 	transform-origin: center;
 	transition: transform 0.35s ease-out;
 	height: var(--height);
@@ -129,8 +131,8 @@ a {
 	border-radius: 50%;
 	background-blend-mode: difference;
 	mix-blend-mode: difference;
-	transform: translate3d(-50%, -50%, 0) translate3d(var(--x), var(--y), 0)
-		scale(10);
+	transform: translate3d(-50%, -50%, 0)
+		translate3d(calc(var(--x)), calc(var(--y)), 0) scale(10);
 }
 
 .cursor[data-type='view'] {

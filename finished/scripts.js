@@ -1,6 +1,7 @@
 // Track mouse position and add custom properties to the body
 window.addEventListener('mousemove', (e) => {
-	document.body.style = `--x: ${e.clientX}px; --y: ${e.clientY}px;`;
+	document.body.style.setProperty('--x', e.clientX + 'px');
+	document.body.style.setProperty('--y', e.clientY + 'px');
 });
 
 // Create functions to easily change the cursor and reset it

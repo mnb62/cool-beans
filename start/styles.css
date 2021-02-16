@@ -14,6 +14,12 @@
 }
 
 /* Default Custom Properties */
+:root {
+	--font-light: 'Space Grotesk Light';
+	--font-regular: 'Space Grotesk Regular';
+	--font-medium: 'Space Grotesk Medium';
+	--font-bold: 'Space Grotesk Bold';
+}
 
 /* Base Styles */
 html {
@@ -29,7 +35,6 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	cursor: none;
 }
 
 .container {
@@ -71,3 +76,5 @@ body {
 	height: 50vh;
 	object-fit: cover;
 }
+
+/* Cursor */
